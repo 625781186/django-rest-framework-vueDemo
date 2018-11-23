@@ -16,7 +16,6 @@ git clone https://github.com/625781186/django-rest-framework-vueDemo.git
 ```
 
 
-
 ## 1. Vue Build Setup
 
 ``` bash
@@ -33,6 +32,7 @@ open "http://localhost:8080/#/course" in browser.(not show course detail in cour
 
 ![django server not start](https://i.loli.net/2018/11/23/5bf7de151d1b2.png)
 django server not start
+
 
 ## 2. Django Build Setup
 
