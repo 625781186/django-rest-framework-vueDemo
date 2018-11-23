@@ -19,7 +19,7 @@ git clone https://github.com/625781186/django-rest-framework-vueDemo.git
 ## 1. Vue Build Setup
 
 ``` bash
-cd django-rest-framework-vueDemo/vue_P
+cd django-rest-framework-vueDemo/vue_Pro
 
 # install dependencies
 npm install
