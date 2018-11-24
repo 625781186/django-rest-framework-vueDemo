@@ -26,17 +26,22 @@
       // 写法二
       initCourseList() {
         // 在105 day （一）说明
-        var that = this
+                                                           //var that = this
         this.$axios.request({
           url: 'http://127.0.0.1:8000/v1/api/course/',
           method: 'GET',
           // 回调 , data: 成功之后返回的值
         })
-          .then(function (ret) {
+                                                            /*
+                                                              .then(function (ret) {
+                                                              if (ret.data.code === 1000) {
+                                                                // this.courseList = ret.data.code
+                                                                // 上行的 this是 $axios 里的, 不是vm里的
+                                                                that.courseList = ret.data.data
+                                                             */
+          .then( (ret) => {
           if (ret.data.code === 1000) {
-            // this.courseList = ret.data.code
-            // 上行的 this是 $axios 里的, 不是vm里的
-            that.courseList = ret.data.data
+            this.courseList = ret.data.data                                                             
             console.log(ret.data.data)
           }
           else {alter("异步请求失败")}
